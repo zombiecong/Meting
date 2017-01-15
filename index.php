@@ -5,7 +5,7 @@
  * 其中 format(1) 表示使用内置格式化输出，否则将直接输出原 json 值
  */
 
-require '../../Meting.php';
+require 'Meting.php';
 
 $data=(new Meting($_GET["engine"]))->search($_GET["keyword"]);
 // $data=(new Meting('netease'))->format(1)->album('2630008');
