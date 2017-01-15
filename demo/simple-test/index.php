@@ -7,7 +7,7 @@
 
 require '../../Meting.php';
 
-$data=(new Meting('netease'))->search('我的天空');
+$data=(new Meting($_GET["engine"]))->search($_GET["keyword"]);
 // $data=(new Meting('netease'))->format(1)->album('2630008');
 // $data=(new Meting('netease'))->format(1)->playlist('3865036');
 // $data=(new Meting('netease'))->format(1)->song('28892408');
